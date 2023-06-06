@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: rgb(86, 86, 235);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+   border: none;
+   position: relative;
+   height: 50px;
+}
+
+.container input{
+   font-size: 0.7rem;
+   width: 30px;
+   height: 30px;
+   transition: width 0.3s ease;
+   background-color:#fff;
+   border: none;
+   padding: 10px;
+}
+
+.input:focus , .btn:foucs{
+    outline: none;
+}
+.container button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    transition: transform 0.5s ease-in;
+}
+
+.container.active .input{
+    width: 140px;
+}
+.container.active .btn{
+    transform: translateX(138px);
+}
