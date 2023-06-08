@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #9b59b6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn{
+    background-color: #8e44ad;
+    color : #bdc3c7;
+    border:  none ;
+    margin : 1rem;
+    padding : 1.5rem 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: inherit;
+    box-shadow: 0 1px 10px black;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    color: #fff;
+}
